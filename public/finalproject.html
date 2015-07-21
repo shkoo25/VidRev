@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html ng-app="reviewApp"> 
+  <head>
+    <title>VidRev</title>
+    <link href="finalproject.css" rel="stylesheet" />
+  </head> 
+  <body>
+
+            <div class = "header">
+            <span class = "header-1">Vid</span>
+            <span class = "header-2">Rev</span>
+            </div>
+        
+          <div class="container">
+
+          
+
+              <div class = "critic-header">Critic Reviews</div>
+              <div class = "metacritic-container"> 
+                      <div ng-controller = "metaController" class = "meta-review">
+                      <div ng-repeat = "review in reviews" class = "more-reviews">
+                          <div class= "critic">Critic:{{review.critic}}</div>
+                          <div class= "score">Score:{{review.score}}</div>
+                          Excerpt:{{review.excerpt}} 
+                          Date:{{review.date}} 
+                          <a href = >Link:{{review.link}} </a>
+                      </div>
+                      </div>
+              </div>
+
+              <div class = "youtube-container">
+                <div ng-controller="youtubeController" class = "youtube-review">
+                <div ng-repeat = "youtube in youtubes" class = "title2">
+                  <iframe ng-src="{{youtube.videoUrl}}"></iframe>
+                </div>
+                </div>
+              </div>
+
+              <div class="twitch-container">
+                  <div ng-controller = "twitchController" class = "twitch-review">
+                  <div ng-repeat ="twitch in twitches" class = "more-twitch">
+                    <div class = "viewers"> Viewers {{twitch.viewers}}</div>
+                    <a ng-href = > Video: {{twitch.links.self}}</a>
+                  </div>
+                  </div>
+              </div>
+
+          </div>
+   
+
+      <script src ="libs/angular.js"></script>
+      <script src ="libs/underscore.js"></script>  
+      <script src ="finalproject.js"></script>
+  </body>
+  </html> 

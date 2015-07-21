@@ -1,0 +1,102 @@
+ *{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif
+}
+
+.header{
+	height:8vh;
+	width:100%;
+	text-align: left;
+	background-color:black;
+	color:orange;
+	font-style: strong;
+	font-size:40px;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	box-shadow:2px;
+	display: inline-block;
+}
+.header-1{
+	color:orange;
+	display: inline-block;
+	position: relative;
+
+}
+.header-2{
+	color:white;
+	display: inline-block;
+	position: relative;
+	left: -1.6%;
+}
+
+.container{
+	height:100vh;
+	width:100%;
+	display: inline-block;
+	background-image:url("libs/youtube-background.png");
+	background-repeat: none;
+
+}
+
+.metacritic-container{
+	height:90vh;
+	width:20%;
+	overflow:scroll;
+	display: inline-block;
+	background-color:black;
+	color:white;
+	font-size:9px;
+	margin-bottom:20px;
+	opacity:0.6;
+
+}
+
+.metacritic-container:hover{
+	opacity: 1.0
+}
+
+.youtube-container{
+	width:72%;
+	height:85vh;
+	display: inline-block;
+	margin-left:30px;
+	color:white;
+	vertical-align: top;
+	overflow: scroll;
+}
+#player{
+	display: inline-block;
+	vertical-align: top;
+	width:25%;
+	position: relative;
+}
+
+.critic-header{
+	background-color:black;
+	color:orange;
+	font-size:30px;
+	width:20%;
+}
+
+.youtube-review{
+	width: 100%;
+}
+
+.title2{
+	display:inline-block;
+	width:45%;
+	height:20vh;
+	margin:20px;
+
+	vertical-align: top;
+}
+.more-reviews{
+	margin-bottom:25px;
+}
+
+
+
+
