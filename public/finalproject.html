@@ -9,21 +9,28 @@
             <div class = "header">
             <span class = "header-1">Vid</span>
             <span class = "header-2">Rev</span>
+            
             </div>
         
           <div class="container">
 
-          
-
               <div class = "critic-header">Critic Reviews</div>
               <div class = "metacritic-container"> 
+                    
                       <div ng-controller = "metaController" class = "meta-review">
                       <div ng-repeat = "review in reviews" class = "more-reviews">
-                          <div class= "critic">Critic:{{review.critic}}</div>
-                          <div class= "score">Score:{{review.score}}</div>
+                          <div class= "critic">{{review.critic}}</div>
+
+                          <div class= "score" 
+                           ng-class="{
+                            'orange': ((review.score * 1) >= 80),
+                            'yellow': ((review.score * 1) <= 79),
+                            'red': ((review.score * 1) <= 60)
+                          }">
+                          {{review.score}}</div>
                           Excerpt:{{review.excerpt}} 
                           Date:{{review.date}} 
-                          <a href = >Link:{{review.link}} </a>
+                          <a ng-href= "{{review.link}}" target="_.blank">Read Review</a>
                       </div>
                       </div>
               </div>
@@ -31,19 +38,23 @@
               <div class = "youtube-container">
                 <div ng-controller="youtubeController" class = "youtube-review">
                 <div ng-repeat = "youtube in youtubes" class = "title2">
-                  <iframe ng-src="{{youtube.videoUrl}}"></iframe>
+                  <iframe ng-src="{{youtube.videoUrl}}" frameborder="0" allowfullscreen></iframe>
                 </div>
                 </div>
               </div>
 
               <div class="twitch-container">
                   <div ng-controller = "twitchController" class = "twitch-review">
-                  <div ng-repeat ="twitch in twitches" class = "more-twitch">
-                    <div class = "viewers"> Viewers {{twitch.viewers}}</div>
-                    <a ng-href = > Video: {{twitch.links.self}}</a>
+                  <div ng-repeat ="twitch in twitches" class = "twitch-edit">
+                    
+                    <iframe ng-src="{{twitch.videoUrl}}"
+                    frameborder="0" scrolling="no" height="378" width="620"></iframe>
                   </div>
                   </div>
               </div>
+
+
+
 
           </div>
    

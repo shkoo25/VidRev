@@ -7,7 +7,9 @@ var app = angular.module("reviewApp", [])
                  console.log($scope.reviews)
              })
 
-        }) 
+    })
+
+           
 
     app.controller("youtubeController", function($scope, $http, $sce){
             $http.get("https:vidrev.herokuapp.com")
@@ -24,11 +26,18 @@ var app = angular.module("reviewApp", [])
 
         }) 
 
-    app.controller("twitchController", function($scope, $http){
+    app.controller("twitchController", function($scope, $http, $sce){
     	$http.get("https://vidrev.herokuapp.com")
     		.success(function(data){
+    			var twitchData = data.Twitch
+             	twitchData = twitchData.map(function(video){
+             		video.videoUrl = $sce.trustAsResourceUrl("https://www.twitch.tv/worldofnerds/embed")
+             		return video
+             	})
     			$scope.twitches = data.Twitch
     			console.log($scope.twitches)
     		})
-
     })
+    	
+
+

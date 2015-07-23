@@ -5,6 +5,7 @@
   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif
 }
 
+
 .header{
 	height:8vh;
 	width:100%;
@@ -29,21 +30,25 @@
 	color:white;
 	display: inline-block;
 	position: relative;
-	left: -1.6%;
+	left: -1.2%;
 }
 
 .container{
 	height:100vh;
 	width:100%;
 	display: inline-block;
-	background-image:url("libs/youtube-background.png");
+	background: url("libs/youtube-background.png");) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	
 	background-repeat: none;
-
 }
 
 .metacritic-container{
-	height:90vh;
-	width:20%;
+	height:82vh;
+	width:13%;
 	overflow:scroll;
 	display: inline-block;
 	background-color:black;
@@ -67,6 +72,19 @@
 	vertical-align: top;
 	overflow: scroll;
 }
+
+.twitch-container{
+	width:100%;
+	display: inline-block;
+	margin-top:8%;
+}
+
+.twitch-edit{
+	display: inline-block;
+	width:25%;
+	margin-bottom:20px;
+}
+
 #player{
 	display: inline-block;
 	vertical-align: top;
@@ -78,25 +96,44 @@
 	background-color:black;
 	color:orange;
 	font-size:30px;
-	width:20%;
-}
-
-.youtube-review{
-	width: 100%;
+	width:13%;
 }
 
 .title2{
 	display:inline-block;
-	width:45%;
-	height:20vh;
+	width:29%;
 	margin:20px;
-
 	vertical-align: top;
 }
+
 .more-reviews{
 	margin-bottom:25px;
 }
 
+.critic{
+	font-size:15px;
+}
 
+.score{
+	font-size:20px;
+	text-align: center;
+	border-radius:3px;
+}
 
+.orange{
+	background-color:green;
+	width:19%;
+	font-family:strong;
+}
+.yellow{
+	background-color:RGB(227, 133, 20);
+	color:white;
+	width:19%;
+	font-family:strong;
+}
+.red{
+	background-color:red;
+	width:19%;
+	font-family:strong;
+}
 
