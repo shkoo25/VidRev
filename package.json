@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "express": "~4.10.6"
+    "express": "~4.10.6",
+    "masonry-layout": "^3.3.1"
   }
 }
