@@ -1,9 +1,12 @@
- *{ 
+ *{  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif
 }
+
+
+
 
 
 .header{
@@ -42,6 +45,7 @@
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  	overflow:scroll;
 	
 	background-repeat: none;
 }
@@ -64,17 +68,18 @@
 }
 
 .youtube-container{
-	width:72%;
+	width:83%;
 	height:85vh;
 	display: inline-block;
 	margin-left:30px;
 	color:white;
 	vertical-align: top;
-	overflow: scroll;
+	position:absolute;
+	overflow:scroll;
 }
 
 .twitch-container{
-	width:100%;
+	width:72%;
 	display: inline-block;
 	margin-top:8%;
 }
@@ -100,10 +105,12 @@
 }
 
 .title2{
+	margin-left:49px;
+	top:0;
+	left:0;
+	position:relative;
 	display:inline-block;
-	width:29%;
-	margin:20px;
-	vertical-align: top;
+	margin: 0 0 lem;
 }
 
 .more-reviews{
@@ -136,4 +143,6 @@
 	width:19%;
 	font-family:strong;
 }
+
+
 
