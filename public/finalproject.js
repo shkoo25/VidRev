@@ -1,4 +1,16 @@
-var app = angular.module("reviewApp", [])
+var app = angular.module("reviewApp", ["ngRoute"])
+
+    app.controller("pageController", function($scope, $http){
+
+      
+        $http.get("http://389b0914.ngrok.io/?search=" + $scope.search)
+            .success(function(data){
+              console.log("hi")
+
+
+            })
+      
+    })
 
     app.controller("metaController", function($scope, $http){
             $http.get("https://vidrev.herokuapp.com")
@@ -45,13 +57,30 @@ var app = angular.module("reviewApp", [])
         $scope.clickedOn[twitch.stream_id] = true
         
       }
-   })
-
-    /*app.controller.("searchController", function($scope, $http,){
-          $http.post("http://389b0914.ngrok.io/?search="dota2")
-
-
     })
-    	
+
+    /*app.controller.("searchController", function($scope, $http){
+          $http.get("http://389b0914.ngrok.io/?search=dota2")
+            .success(function(data){
+              $scope.clickSearch() = data
+              console.log(this)
+            
+        })
+
+    })*/
+  app.config(function($routeProvider){
+
+    $routeProvider
+      
+      .when("/results",{
+        templateUrl: "templates/results.html"
+      })
+      .otherwise({
+        templateUrl:"templates/landing.html"
+      })
+
+  })
+    
+      
 
 
