@@ -2,8 +2,11 @@ var app = angular.module("reviewApp", ["ngRoute"])
 
 
     app.controller("searchController", function($scope){
+        $scope.submit = function(){
+          window.location.href = "#results/" + $scope.text
+        }
+     })
 
-    })
  
     app.controller("baseController", function($scope, $http, $sce, $routeParams){
       var game = $routeParams.game_name
