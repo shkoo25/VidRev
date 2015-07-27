@@ -1,10 +1,10 @@
-          <div class="container">
+          <div class="container" ng-controller = "baseController" >
                   
 
               <div class = "critic-header">Critic Reviews</div>
               <div class = "metacritic-container"> 
                     
-                      <div ng-controller = "baseController" class = "meta-review">
+                      <div class = "meta-review">
                       <div ng-repeat = "review in reviews" class = "more-reviews">
                           <div class= "critic">{{review.critic}}</div>
 
@@ -24,11 +24,11 @@
 
 
 
-              </div>
+                </div>
 
               
                     <div class = "youtube-container">
-                            <div ng-controller="baseController" class = "youtube-review">
+                            <div class = "youtube-review">
                             <div ng-repeat = "youtube in youtubes" class = "title2">
 
                               <iframe ng-src="{{youtube.videoUrl}}" frameborder="0" height="360" width="480" allowfullscreen></iframe>
@@ -36,16 +36,13 @@
                             </div>
                    
 
-
-                          <div class="twitch-container">
-                            <div ng-controller = "baseController" class = "twitch-review">
+                            <div class = "twitch-review">
                               <div ng-repeat ="twitch in twitches" class = "twitch-edit">
 
                                 <img 
                                   ng-if="clickedOn[twitch.stream_id] === false" 
                                   ng-click="clickPlay(twitch)"
-                                  ng-src="{{twitch.preview.large}}">
-                                </img>
+                                  ng-src="{{twitch.preview.large}}" />
 
                                 <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play">
                                   <iframe ng-src="{{twitch.videoUrl}}"
@@ -54,9 +51,10 @@
 
                             </div>
                             </div>
-                          </div>
+                         
               
 
+                </div>
               </div>
 
 
