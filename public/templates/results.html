@@ -1,4 +1,14 @@
           <div class="container" ng-controller = "baseController" >
+
+
+                <ng-form name="searchForm" ng-controller="searchController">
+        
+                  <input type = "text" class = "searchArea" ng-model ="search" placeholder ="Title"
+                  name ="title"/> 
+                  <a ng-href="#results/{{ search }}">
+                    <div id="submit-button" input type="submit" ng-click"search"> Enter </div>
+                  </a> 
+                </ng-form>
                   
 
               <div class = "critic-header">Critic Reviews</div>
@@ -42,7 +52,8 @@
                                 <img 
                                   ng-if="clickedOn[twitch.stream_id] === false" 
                                   ng-click="clickPlay(twitch)"
-                                  ng-src="{{twitch.preview.large}}" />
+                                  ng-src="{{twitch.preview.large}}"
+                                  ng-src="http://www.apl.washington.edu/project/lib/images/video/video_thumb_play_icon.png"/>
 
                                 <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play">
                                   <iframe ng-src="{{twitch.videoUrl}}"
