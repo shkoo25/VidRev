@@ -55,7 +55,7 @@
                                   ng-src="{{twitch.preview.large}}"
                                   ng-src="http://www.apl.washington.edu/project/lib/images/video/video_thumb_play_icon.png"/>
 
-                                <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play">
+                                <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play" target -"_.blank">
                                   <iframe ng-src="{{twitch.videoUrl}}"
                                 frameborder="0" scrolling="no" height="360" width="480" position="absolute" top="40%" left= "40"></iframe>
                                 </span>
