@@ -8,8 +8,17 @@
             
 
                 <div class = "header">
+
                   <span class = "header-1">Vid</span>
                   <span class = "header-2">Rev</span>
+                  <form ng-controller="searchController" ng-submit="submit()" class = "searchArea"> 
+        
+                  <input type = "text" ng-model ="text" placeholder ="Title"
+                  name ="title"/> 
+                  <a ng-href="#results/{{ text }}">
+                    <div id="submit-button" input type ="submit" value = "Submit"> Enter </div>
+                  </a> 
+                </form>
                 </div>
 
             
