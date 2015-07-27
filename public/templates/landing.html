@@ -1,7 +1,12 @@
 <div class = "search-container">
+
                 
-                  <input type = "text" class = "searchArea" ng-model ="search" placeholder ="Title"/>
+                <ng-form name="searchForm" ng-controller="searchController" class="">
+  				userType: <input name="input" ng-model="userType" required>
+                  <input type = "text" class = "searchArea" ng-model ="search" placeholder ="Title" name ="title"/> 
                   <a href="#results">
                     <div id="submit-button" input type="submit" ng-click"search"> Enter </div>
                   </a> 
+                </ng-form>
+
 </div>

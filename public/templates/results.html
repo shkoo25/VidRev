@@ -4,7 +4,7 @@
               <div class = "critic-header">Critic Reviews</div>
               <div class = "metacritic-container"> 
                     
-                      <div ng-controller = "metaController" class = "meta-review">
+                      <div ng-controller = "baseController" class = "meta-review">
                       <div ng-repeat = "review in reviews" class = "more-reviews">
                           <div class= "critic">{{review.critic}}</div>
 
@@ -20,11 +20,15 @@
                           <a ng-href= "{{review.link}}" target="_.blank">Read Review</a>
                       </div>
                       </div>
+
+
+
+
               </div>
 
               
                     <div class = "youtube-container">
-                            <div ng-controller="youtubeController" class = "youtube-review">
+                            <div ng-controller="baseController" class = "youtube-review">
                             <div ng-repeat = "youtube in youtubes" class = "title2">
 
                               <iframe ng-src="{{youtube.videoUrl}}" frameborder="0" height="360" width="480" allowfullscreen></iframe>
@@ -34,7 +38,7 @@
 
 
                           <div class="twitch-container">
-                            <div ng-controller = "twitchController" class = "twitch-review">
+                            <div ng-controller = "baseController" class = "twitch-review">
                               <div ng-repeat ="twitch in twitches" class = "twitch-edit">
 
                                 <img 
@@ -56,12 +60,4 @@
               </div>
 
 
-               <!--<div class="container">
-   
-    <div class="result" ng-repeat="result in results">
-      <div class="youtube" ng></div>
-      <div class="metacritic"></div>
-      <div class="twitch"></div>
-    </div>
-
- </div>-->
+               

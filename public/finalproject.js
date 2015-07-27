@@ -1,73 +1,59 @@
 var app = angular.module("reviewApp", ["ngRoute"])
 
-    app.controller("pageController", function($scope, $http){
-
-      
-        $http.get("http://389b0914.ngrok.io/?search=" + $scope.search)
-            .success(function(data){
-              console.log("hi")
-
-
-            })
-      
-    })
-
-    app.controller("metaController", function($scope, $http){
+ 
+    app.controller("baseController", function($scope, $http, $sce){
             $http.get("https://vidrev.herokuapp.com")
              .success(function(data){
                  $scope.reviews = data.Metacritic
-                 console.log($scope.reviews)
+                 var youtubeData = data.Youtube
+              youtubeData = youtubeData.map(function(video){
+                video.videoUrl = $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + video.videoId)
+                return video
+              })
+                 $scope.youtubes = youtubeData
+                 var twitchData = data.Twitch
+                 console.log('Here1')
+                 $scope.clickedOn = {}
+
+                $scope.clickPlay = function(twitch) {
+                  $scope.clickedOn[twitch.stream_id] = true
+                  
+                }
+
+                twitchData = twitchData.map(function(video){
+                    console.log('Here1.5')
+                    $scope.clickedOn[video.stream_id] = false
+                    console.log('Here2')
+                   video.videoUrl = $sce.trustAsResourceUrl(video.links + "/embed")
+                   console.log('Here3')
+                    return video
+
+                })
+                console.log('Here4')
+                $scope.twitches = data.Twitch 
+
+
              })
+            
 
     })
 
            
 
-    app.controller("youtubeController", function($scope, $http, $sce){
-            $http.get("https:vidrev.herokuapp.com")
-             .success(function(data){
-             	var youtubeData = data.Youtube
-             	youtubeData = youtubeData.map(function(video){
-             		video.videoUrl = $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + video.videoId)
-             		return video
-             	})
-                 $scope.youtubes = youtubeData
-                 console.log($scope.youtubes)
-             })
 
-
-        })
-
-    app.controller("twitchController", function($scope, $http, $sce){
-       $http.get("https://vidrev.herokuapp.com")
-           .success(function(data){
-               var twitchData = data.Twitch
-                twitchData = twitchData.map(function(video){
-                    $scope.clickedOn[video.stream_id] = false
-                   video.videoUrl = $sce.trustAsResourceUrl(video.links + "/embed")
-                    return video
-                })
-                $scope.twitches = data.Twitch 
-               console.log($scope.twitches)
-           })
-
-      $scope.clickedOn = {}
-
-      $scope.clickPlay = function(twitch) {
-        $scope.clickedOn[twitch.stream_id] = true
-        
+    app.controller("searchController", function($scope, $http, $location){
+      $scope.submit = function() {
+              if ($scope.text){
+                 
+                 $http.get("http://389b0914.ngrok.io/?search=" + $scope.text)
+                      .success(function(data){
+                        //$location.url('/results')
+                      
+                      })
+                      $scope.text = ''
+          }
       }
-    })
-
-    /*app.controller.("searchController", function($scope, $http){
-          $http.get("http://389b0914.ngrok.io/?search=dota2")
-            .success(function(data){
-              $scope.clickSearch() = data
-              console.log(this)
-            
-        })
-
-    })*/
+  })
   app.config(function($routeProvider){
 
     $routeProvider
