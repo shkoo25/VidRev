@@ -149,7 +149,6 @@ img{
 #submit-button{
 	display:none;
 }
-
 .search-container{
 	height:100vh;
 	width:100%;
@@ -165,3 +164,45 @@ img{
 .searchArea{
 	display: inline-block;
 }
+
+.card {
+  position: relative;
+  float: left;
+  padding-bottom: 25%;
+  width: 25%;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1.0s;
+          transition: transform 1.0s;
+}
+
+
+.card__back {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.card.effect__random.flipped .card__front {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.card.effect__random.flipped .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+

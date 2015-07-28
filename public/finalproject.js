@@ -2,10 +2,12 @@ var app = angular.module("reviewApp", ["ngRoute"])
 
 
     app.controller("searchController", function($scope){
+      
         $scope.submit = function(){
           window.location.href = "#results/" + $scope.text
           $scope.text = ''
         }
+
      })
 
  
@@ -61,6 +63,8 @@ var app = angular.module("reviewApp", ["ngRoute"])
       })
 
   })
+
+
     
       
 
