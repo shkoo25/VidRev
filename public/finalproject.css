@@ -245,11 +245,15 @@ h1{
           transform: rotateY(0);
 }
 
-img{
-	width:200px;
-	height:250px;
+.front{
+    width:200px;
+    height:250px;
 }
 
+.twitch-pic{
+	width:480px;
+	height:360px;
+}
 
 
 
