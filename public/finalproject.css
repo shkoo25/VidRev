@@ -176,7 +176,8 @@
 }
 
 .slogan-container{
-  width: 45%;
+  margin-top: 55px;
+  width: 60%;
   padding: 0;
 }
 
@@ -186,16 +187,16 @@
 }
 
 h1{
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .paragraph1{
-  font-size: 20px
+  font-size: 15px;
+  margin-bottom: 25px;
 }
 
 #gamepanel{
   width: 1000px;
-  margin: 100px 50px 75px;
 }
 
 .card {
@@ -204,16 +205,16 @@ h1{
   padding-bottom: 20%;
   height: 0px;
   width: 200px;
+  margin-bottom: 50px
 }
 
 .card__front, 
 .card__back {
-  display: block;
+  /*change to relative to cascade tiles*/
   position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
 }
 
 .card__front,
@@ -246,8 +247,9 @@ h1{
 
 img{
 	width:200px;
-	height:auto;
+	height:250px;
 }
+
 
 
 
