@@ -49,6 +49,7 @@
                             <div class = "twitch-review">
                               <div ng-repeat ="twitch in twitches" class = "twitch-edit">
 
+                                <div class = "twitch-pic">
                                 <img 
                                   ng-if="clickedOn[twitch.stream_id] === false" 
                                   ng-click="clickPlay(twitch)"
@@ -59,6 +60,7 @@
                                   <iframe ng-src="{{twitch.videoUrl}}"
                                 frameborder="0" scrolling="no" height="360" width="480" position="absolute" top="40%" left= "40"></iframe>
                                 </span>
+                                </div>
 
                             </div>
                             </div>

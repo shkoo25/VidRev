@@ -141,7 +141,7 @@
 	font-family:strong;
 }
 
-img{
+.twitch-pic{
 	width:480px;
 	height:360px;
 }
@@ -165,16 +165,21 @@ img{
 	display: inline-block;
 }
 
+
+
 .card {
   position: relative;
   float: left;
-  padding-bottom: 25%;
-  width: 25%;
+  padding-bottom: 20%;
+  height: 0px;
+  width: 200px;
+  text-align: center;
 }
 
-.card__front,
+.card__front, 
 .card__back {
-  position: absolute;
+  display: block;
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
@@ -185,10 +190,10 @@ img{
 .card__back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 1.0s;
-          transition: transform 1.0s;
+  -webkit-transition: -webkit-transform 0.9s;
+          transition: transform 0.9s;
+        
 }
-
 
 .card__back {
   -webkit-transform: rotateX(-180deg);
@@ -196,13 +201,22 @@ img{
 }
 
 .card.effect__random.flipped .card__front {
+	  width:200px;
+          height:auto;
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
 }
 
 .card.effect__random.flipped .card__back {
+	  width:200px;
+          height:auto;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
+}
+
+img{
+	width:200px;
+	height:auto;
 }
 
 
