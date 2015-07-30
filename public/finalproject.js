@@ -98,9 +98,6 @@ var app = angular.module("reviewApp", ["ngRoute"])
       })
 
   })
-
-
-    
       
 
 
