@@ -3,7 +3,7 @@
 
                 <ng-form name="searchForm" ng-controller="searchController">
         
-                  <class = "searchArea" ng-model ="search" placeholder ="🔎Enter Game Title..."
+                  <class = "searchArea" ng-model ="search" placeholder ="Enter Game Title..."
                   name ="title"/> 
                   <a ng-href="#results/{{ search }}">
                     <div id="submit-button" input type="submit" ng-click"search"> Enter </div>
@@ -13,8 +13,9 @@
 
               <div class = "critic-header">Critic Reviews</div>
               <div class = "metacritic-container"> 
-                    
+                      
                       <div class = "meta-review">
+                      
                       <div ng-repeat = "review in reviews" class = "more-reviews">
                           <div class= "critic">{{review.critic}}</div>
 
@@ -37,29 +38,32 @@
                 </div>
 
               
-                    <div class = "youtube-container">
+                    <div class = "youtube-container"> Youtube Results
                             <div class = "youtube-review">
-                            <div ng-repeat = "youtube in youtubes" class = "title2">
+                            <div ng-repeat = "youtube in youtubes" class = "youtube-panel">
 
                               <iframe ng-src="{{youtube.videoUrl}}" frameborder="0" height="360" width="480" allowfullscreen></iframe>
                             </div>
                             </div>
                    
 
-                            <div class = "twitch-review">
-                              <div ng-repeat ="twitch in twitches" class = "twitch-edit">
+                            Twitch Live Video<div class = "twitch-review"> 
+                              <div ng-repeat ="twitch in twitches" class = "twitch-panel" target ="_.blank">
 
                                 
                                 <img class = "twitch-pic"
+
                                   ng-if="clickedOn[twitch.stream_id] === false" 
                                   ng-click="clickPlay(twitch)"
                                   ng-src="{{twitch.preview.large}}"
-                                  ng-src="http://www.apl.washington.edu/project/lib/images/video/video_thumb_play_icon.png"/>
+                                  ng-src="http://www.apl.washington.edu/project/lib/images/video/video_thumb_play_icon.png"
+                                  />
 
-                                <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play" target -"_.blank">
+                                <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play">
                                   <iframe ng-src="{{twitch.videoUrl}}"
                                 frameborder="0" scrolling="no" height="360" width="480" position="absolute" top="40%" left= "40"></iframe>
                                 </span>
+
                                 
 
                             </div>

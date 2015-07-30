@@ -4,13 +4,13 @@ var app = angular.module("reviewApp", ["ngRoute"])
     app.controller("searchController", function($scope){
       (function() {
 
-  // cache vars
+  
   var cards = document.querySelectorAll(".card.effect__random");
   var timeMin = 3;
   var timeMax = 15;
   var timeouts = [];
 
-  // loop through cards
+  
   for ( var i = 0, len = cards.length; i < len; i++ ) {
     var card = cards[i];
     var cardID = card.getAttribute("data-id");
@@ -19,7 +19,7 @@ var app = angular.module("reviewApp", ["ngRoute"])
     cardsTimeout( id, time, card );
   }
 
-  // timeout listener
+  
   function cardsTimeout( id, time, card ) {
     if (id in timeouts) {
       clearTimeout(timeouts[id]);
@@ -32,7 +32,7 @@ var app = angular.module("reviewApp", ["ngRoute"])
     }, time );
   }
 
-  // random number generator given min and max
+  
   function randomNum( min, max ) {
     return Math.random() * (max - min) + min;
   }
@@ -42,24 +42,19 @@ var app = angular.module("reviewApp", ["ngRoute"])
         $scope.submit = function(){
           window.location.href = "#results/" + $scope.text
           $scope.text = ''
-
         }
-
 
      })
 
-
-
- 
     app.controller("baseController", function($scope, $http, $sce, $routeParams){
       var game = $routeParams.game_name
       
       $http.get("https://vidrev.herokuapp.com/?search=" + game).success(function(data){
-        
-        console.log("data", data)
-
-
+      
           $scope.reviews = data.Metacritic
+
+
+
           var youtubeData = data.Youtube
           youtubeData = youtubeData.map(function(video){
             video.videoUrl = $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + video.videoId)
