@@ -39,9 +39,12 @@ var app = angular.module("reviewApp", ["ngRoute"])
 
 })();
 
+
+
+
         $scope.submit = function(){
           window.location.href = "#results/" + $scope.text
-          $scope.text = ''
+          
         }
 
      })

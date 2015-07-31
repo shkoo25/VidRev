@@ -15,10 +15,10 @@
                   
                   <form ng-controller="searchController" ng-submit="submit()" class = "searchArea"> 
         
-                  <input type = "text" ng-model ="text" placeholder ="Enter Game Title..."
-                  name ="title"/> 
+                  <input type = "textarea" ng-model ="text" placeholder ="Enter Game Title..."
+                  name ="title" class = "search-box"/> 
                   <a ng-href="#results/{{ text }}">
-                    <div id="submit-button" input type ="submit" value = "Submit"> Enter </div>
+                    <div id="submit-button" input type ="submit"  value = "Submit"> Enter </div>
                   </a> 
                 </form>
                 </div>

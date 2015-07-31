@@ -6,7 +6,7 @@
                   <class = "searchArea" ng-model ="search" placeholder ="Enter Game Title..."
                   name ="title"/> 
                   <a ng-href="#results/{{ search }}">
-                    <div id="submit-button" input type="submit" ng-click"search"> Enter </div>
+                    <div id="submit-button" input type="submit" class = "search-box" ng-click"search"> Enter </div>
                   </a> 
                 </ng-form>
                   
@@ -38,16 +38,23 @@
                 </div>
 
               
-                    <div class = "youtube-container"> Youtube Results
+                    <div class = "youtube-container"> 
+                    <img src="libs/youtube1.png" class = "youtube-logo"/>
                             <div class = "youtube-review">
+
+
+
                             <div ng-repeat = "youtube in youtubes" class = "youtube-panel">
 
                               <iframe ng-src="{{youtube.videoUrl}}" frameborder="0" height="360" width="480" allowfullscreen></iframe>
                             </div>
                             </div>
+                    </div>
                    
 
-                            Twitch Live Video<div class = "twitch-review"> 
+                     <div class = "twitch-container">  
+                     <img src="libs/twitch1.png" class = "twitch-logo"/>
+                              <div class = "twitch-review"> 
                               <div ng-repeat ="twitch in twitches" class = "twitch-panel" target ="_.blank">
 
                                 
@@ -71,8 +78,8 @@
                          
               
 
-                </div>
-              </div>
+                
+                     </div>
 
 
                
