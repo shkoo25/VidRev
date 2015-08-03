@@ -51,7 +51,6 @@
 	overflow:scroll;
 	margin-left:86px;
 	display: inline-block;
-	background-color: #2B3031;
 	color:white;
 	font-size:9px;
 	margin-bottom:20px;
@@ -294,9 +293,11 @@ h1{
 }
 
 
-
 .search-box{
-	width:450px;
+	width: 450px;
+    position: relative;
+    height: 25px;
+    margin-left: 500px;
 }
 
 .metacritic-logo{
@@ -309,3 +310,13 @@ h1{
 	width:324px;
 }
 
+.footer-container{
+	background-image: url("libs/vidrevbackground.png");) no-repeat center center fixed;
+ 	color:white;
+}
+.searchPic{
+    position: absolute;
+    z-index: 2;
+    margin-left: 900px;
+    margin-top: 8px;
+  }

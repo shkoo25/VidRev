@@ -1,12 +1,14 @@
-<div class = "search-container"> 
+<div class = "search-container">  
 
                 <form ng-controller="searchController" ng-submit="submit()" class = "searchArea"> 
-  			
-                  <ng-model ="text" placeholder="Enter Game Title..."name ="title"/> 
-
+  					
+  					
+                  <ng-model ="text"  placeholder="Enter Game Title..."name ="title"/> 
+                  
                   <a ng-href="#results/{{ text }}">
                     <div id="submit-button" input type ="submit" value = "Submit"> Enter </div>
                   </a> 
+
                 </form>
 
 
