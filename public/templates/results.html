@@ -48,7 +48,7 @@
 
                             <div ng-repeat = "youtube in youtubes" class = "youtube-panel">
 
-                              <iframe ng-src="{{youtube.videoUrl}}"position ="absolute" frameborder="0" height="360" width="400" allowfullscreen></iframe>
+                              <iframe ng-src="{{youtube.videoUrl}}"position ="absolute" frameborder="0" height="360" width="480" allowfullscreen></iframe>
                             </div>
                             </div>
                     </div>
@@ -70,7 +70,7 @@
 
                                 <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play">
                                   <iframe ng-src="{{twitch.videoUrl}}"
-                                frameborder="0" scrolling="no" height="360" width="400" position="absolute" top="40%" left= "40"></iframe>
+                                frameborder="0" scrolling="no" height="360" width="480" position="absolute" top="40%" left= "40"></iframe>
                                 </span>
 
                                 
