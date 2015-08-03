@@ -8,7 +8,6 @@
 .header{
 	height:8vh;
 	width:100%;
-	text-align: center;
 	background-color:black;
 	color:orange;
 	font-style: strong;
@@ -28,6 +27,7 @@
 .header-1 a{
 	color:orange;
 	text-decoration: none;
+	font-weight:bold;
 }
 
 
@@ -35,7 +35,7 @@
 	height:100vh;
 	width:100%;
 	display: inline-block;
-	background: url("libs/vidrevbackground.png");) no-repeat center center fixed; 
+	background-image: url("libs/vidrevbackground.png");) no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;

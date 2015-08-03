@@ -39,7 +39,7 @@ var app = angular.module("reviewApp", ["ngRoute"])
 
 })();
 
-
+        
 
 
         $scope.submit = function(){
@@ -50,6 +50,13 @@ var app = angular.module("reviewApp", ["ngRoute"])
      })
 
     app.controller("baseController", function($scope, $http, $sce, $routeParams){
+
+      /*var background= ["libs/youtube-background.png", "libs/twitch1.png"]
+
+      var backgroundPics = _.sample(background)
+      $scope.background="url(" + backgroundPics + ")"*/
+
+
       var game = $routeParams.game_name
       
       $http.get("https://vidrev.herokuapp.com/?search=" + game).success(function(data){
