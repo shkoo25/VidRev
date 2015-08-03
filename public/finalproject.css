@@ -62,10 +62,10 @@
 }
 
 .youtube-container{
-	width:31%;
+	width:38%;
 	height:85vh;
 	display: inline-block;
-	margin-left:100px;
+	margin-left:25px;
 	color:white;
 	vertical-align: top;
 	position:absolute;
@@ -74,15 +74,14 @@
 
 
 .twitch-container{
-	width:31%;
+	width:38%;
 	height:85vh;
 	display: inline-block;
-	margin-left:750px;
+	margin-left:500px;
 	color:white;
 	vertical-align: top;
 	position:absolute;
 	overflow:scroll;
-
 }
 
 .twitch-panel{
@@ -145,7 +144,7 @@
 }
 
 .twitch-pic{
-	width:480px;
+	width:400px;
 	height:360px;
 }
 
@@ -262,7 +261,7 @@ h1{
 	width:324px;
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1255px){
 		/*if screen gets larger then 960px, it will not display*/
 	.metacritic-container{
 	display:none;
@@ -270,7 +269,31 @@ h1{
 	.critic-header{
 		display: none;
 	}
+	.youtube-container{
+	width:38%;
+	height:85vh;
+	display: inline-block;
+	margin-left:164px;
+	margin-top:57px;
+	color:white;
+	vertical-align: top;
+	position:absolute;
+	overflow:scroll;
+	}
+	.twitch-container{
+	width:38%;
+	height:85vh;
+	display: inline-block;
+	margin-left:580px;
+	margin-top:57px;
+	color:white;
+	vertical-align: top;
+	position:absolute;
+	overflow:scroll;
+	}
 }
+
+
 
 .search-box{
 	width:450px;
