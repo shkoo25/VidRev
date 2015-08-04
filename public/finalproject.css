@@ -265,11 +265,12 @@ h1{
 	height:360px;
 }
 .twitch-logo{
-	height:51px;
-	width:324px;
+	height:36px;
+	width:98px;
 }
 .area{
 	font-size: 0;
+	margin-top:10px;
 }
 .searchPic{
     display: inline-block;
@@ -286,15 +287,16 @@ h1{
     display: inline-block;
     height: 23px;
     margin-left: 700px;
+    font-size:14px;
 }
 
 .metacritic-logo{
-	width:150px;
+	width:98px;
 	height:50px;
 }
 .youtube-logo{
-	height:51px;
-	width:324px;
+	height:36px;
+	width:98px;
 }
 
 .footer-container{
@@ -342,7 +344,7 @@ h1{
 
 .review-container{
 	width: 100%;
-	padding: 15px;
+	padding: 2px;
 }
 @media only screen and (max-width:1161px){
 	.search-box{
@@ -352,6 +354,7 @@ h1{
     display: inline-block;
     height: 23px;
     margin-left: 650px;
+    font-size:14px;
 }
 
 
@@ -386,6 +389,7 @@ h1{
     display: inline-block;
     vertical-align: top;
     height:25px;
+    font-size:14px;
 }
 
 
@@ -397,5 +401,6 @@ h1{
     display: inline-block;
     height: 23px;
     margin-left: 500px;
+    font-size:14px;
 }
 }
