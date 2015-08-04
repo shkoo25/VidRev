@@ -55,6 +55,7 @@
 	font-size:9px;
 	margin-bottom:20px;
 	opacity:0.6;
+	vertical-align: top;
 }
 
 .metacritic-container:hover{
@@ -320,3 +321,7 @@ h1{
     margin-left: 900px;
     margin-top: 8px;
   }
+
+.youtube-review{
+	width:100%;
+}
