@@ -1,16 +1,17 @@
-          <div class="container" ng-controller = "baseController" ng-style="{ background-image: $scope.background }" >
+          <div class="container" ng-controller = "baseController" ng-style="{ background-image: $scope.background }"
+          
 
 
-                <ng-form name="searchForm" ng-controller="searchController">
-        
-                  <class = "searchArea" ng-model ="search" placeholder ="Enter Game Title..."
-                  name ="title"/> 
-                  <a ng-href="#results/{{ search }}">
-                    <div id="submit-button" input type="submit" class = "search-box" ng-click"search"> Enter </div>
-                  </a> 
-                </ng-form>
+                    <ng-form name="searchForm" ng-controller="searchController">
+            
+                      <class = "searchArea" ng-model ="search" placeholder ="Enter Game Title..."
+                      name ="title"/> 
+                      <a ng-href="#results/{{ search }}">
+                        <div id="submit-button" input type="submit" class = "search-box" ng-click"search"> Enter </div>
+                      </a> 
+                    </ng-form>
                   
-
+            <div class = "review-container">
               <div class = "critic-header">
                 <img src="libs/metacritic4.png" class="metacritic-logo"/>
               </div>
@@ -41,34 +42,50 @@
 
               
                     <div class = "youtube-container"> 
-                    <img src="libs/youtube4.png" class = "youtube-logo"/>
+                    <img src="libs/youtube4.png"
+                    class = "youtube-logo"/>
                             <div class = "youtube-review">
-
-
-
                             <div ng-repeat = "youtube in youtubes" class = "youtube-panel">
 
-                              <iframe ng-src="{{youtube.videoUrl}}"position ="absolute" frameborder="0" height="360" width="480" allowfullscreen></iframe>
+                              <iframe ng-src="{{youtube.videoUrl}}" frameborder="0" height="360" width="480" allowfullscreen></iframe>
                             </div>
                             </div>
                     </div>
                    
 
                      <div class = "twitch-container">  
-                     <img src="libs/twitch1.png" class = "twitch-logo"/>
+                     <img src="libs/twitch1.png" 
+                     class = "twitch-logo"/>
+                          
+                        
                               <div class = "twitch-review"> 
                               <div ng-repeat ="twitch in twitches" class = "twitch-panel" target ="_.blank">
 
+
+                              
+                                  <div class="pb" ng-if="clickedOn[twitch.stream_id] === false" 
+                                    ng-click="clickPlay(twitch)">
+                                    <div class = "twitch-button">
+
+                                    <img src = "libs/twitchplay.png"/>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="singlePlayBox" ng-show="clickedOn[twitch.stream_id] === true">
+                                    <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play">
                                 
-                                <img class = "twitch-pic"
-
-                                  ng-if="clickedOn[twitch.stream_id] === false" 
-                                  ng-click="clickPlay(twitch)"
-                                  ng-src="{{twitch.preview.large}}"
-                                  ng-src="http://www.apl.washington.edu/project/lib/images/video/video_thumb_play_icon.png"
-                                  />
-
+                                        <iframe ng-src="{{twitch.videoUrl}}"
+                                      frameborder="0" scrolling="no" height="360" width="480" position="absolute" top="40%" left= "40"></iframe>
+                                    </span>
+                                  </div>
+                                  <img class = "twitch-pic"
+                                      ng-src="{{twitch.preview.large}}"/>
+                                
+                              </div>
+                                
+                                
                                 <span ng-if ="clickedOn[twitch.stream_id] === true" class ="play">
+                                
                                   <iframe ng-src="{{twitch.videoUrl}}"
                                 frameborder="0" scrolling="no" height="360" width="480" position="absolute" top="40%" left= "40"></iframe>
                                 </span>
@@ -82,13 +99,10 @@
                          
               
                      </div>
-                </div>
+            </div>
+             
 
-                 <div class = "footer-container">
-                      <div class = "footer">
-                          awefjfjewoifjaewoi
-                      </div>
-                 </div>
+                 
 
 
 

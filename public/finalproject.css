@@ -25,9 +25,10 @@
 	text-decoration: none;
 }
 .header-1 a{
-	color:orange;
-	text-decoration: none;
-	font-weight:bold;
+	color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block
 }
 
 
@@ -49,7 +50,7 @@
 	height:82vh;
 	width:13%;
 	overflow:scroll;
-	margin-left:86px;
+	margin-left:2%;
 	display: inline-block;
 	color:white;
 	font-size:9px;
@@ -69,7 +70,6 @@
 	margin-left:25px;
 	color:white;
 	vertical-align: top;
-	position:absolute;
 	overflow:scroll;
 }
 
@@ -78,10 +78,9 @@
 	width:38%;
 	height:85vh;
 	display: inline-block;
-	margin-left:508px;
+	/*margin-left:508px;*/
 	color:white;
 	vertical-align: top;
-	position:absolute;
 	overflow:scroll;
 }
 
@@ -108,7 +107,7 @@
 	margin-left:4px;
 	top:0;
 	left:0;
-	position:relative;
+	
 	display:inline-block;
 }
 
@@ -167,6 +166,8 @@
 
 .searchArea{
 	display: inline-block;
+	vertical-align: top;
+	margin-top:9px;
 }
 
 
@@ -260,44 +261,23 @@ h1{
 	height:51px;
 	width:324px;
 }
-
-@media only screen and (max-width:1255px){
-		/*if screen gets larger then 960px, it will not display*/
-	.metacritic-container{
-	display:none;
-	}
-	.critic-header{
-		display: none;
-	}
-	.youtube-container{
-	width:38%;
-	height:85vh;
-	display: inline-block;
-	margin-left:164px;
-	margin-top:57px;
-	color:white;
-	vertical-align: top;
-	position:absolute;
-	overflow:scroll;
-	}
-	.twitch-container{
-	width:38%;
-	height:85vh;
-	display: inline-block;
-	margin-left:580px;
-	margin-top:57px;
-	color:white;
-	vertical-align: top;
-	position:absolute;
-	overflow:scroll;
-	}
+.area{
+	font-size: 0;
 }
+.searchPic{
+    display: inline-block;
+    vertical-align: top;
+    height:25px;
+}
+
 
 
 .search-box{
 	width: 450px;
-    position: relative;
-    height: 25px;
+    /*position: relative;*/
+    vertical-align: top;
+    display: inline-block;
+    height: 23px;
     margin-left: 500px;
 }
 
@@ -315,13 +295,79 @@ h1{
 	background-image: url("libs/vidrevbackground.png");) no-repeat center center fixed;
  	color:white;
 }
-.searchPic{
-    position: absolute;
-    z-index: 2;
-    margin-left: 900px;
-    margin-top: 8px;
-  }
+
 
 .youtube-review{
 	width:100%;
+}
+
+.playbox{
+	position: relative;
+}
+
+.pb{
+	position: absolute;
+	z-index: 1;
+	color: white;
+	top:150px;
+	left: 200px;
+
+}
+.singlePlayBox{
+	position: absolute;
+	width:480px;
+	z-index: 1;
+	height:360px;
+}
+.twitch-button{
+	background-color:rgba(0,0,0,0.5);
+	border-radius:5px;	
+	height:20%;
+	width:24%;
+}
+.twitch-button img{
+	height:100%;
+	width:100%;
+}
+.twitch-button:hover{
+	background-color:red;
+	cursor:pointer;
+}
+
+.review-container{
+	width: 100%;
+	padding: 15px;
+}
+@media only screen and (max-width:1041px){
+		/*if screen gets larger then 960px, it will not display*/
+	.metacritic-container{
+	display:none;
+	}
+	.critic-header{
+		display: none;
+	}
+	.youtube-container{
+		width:100%;
+		height:85vh;
+		display: block;
+		margin-left:10px;
+		margin-top:57px;
+		color:white;
+		overflow:scroll;
+	}
+	.twitch-container{
+		width:100%;
+		height:85vh;
+		display:block;
+		margin-left:10px;
+		margin-top:57px;
+		color:white;
+		overflow:scroll;
+	}
+	.searchPic{
+	    position: absolute;
+	    z-index: 2;
+	    margin-left: 771px;
+    	margin-top: 70px;
+  	}
 }

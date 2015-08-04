@@ -76,9 +76,14 @@ var app = angular.module("reviewApp", ["ngRoute"])
           var twitchData = data.Twitch
           $scope.clickedOn = {}
 
+
+          
+
           $scope.clickPlay = function(twitch) {
             $scope.clickedOn[twitch.stream_id] = true
+            $scope.playVideo = true
           }
+            
 
           twitchData = twitchData.map(function(video){
             $scope.clickedOn[video.stream_id] = false

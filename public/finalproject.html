@@ -12,20 +12,22 @@
 
                   <span class = "header-1"</span>
                   <a ng-href ="#landing">VIDREV</a>
-                  <span class = "searchPic">
-                  <img src = "libs/glass.png"/>
-                  </span>
+                  
                   
                   <form ng-controller="searchController" ng-submit="submit()" class = "searchArea"> 
-                  <span class = "area">
-                  <input type = "textarea" ng-model ="text" placeholder ="Enter Game Title..."
-                  name ="title" class = "search-box"/> 
+                  <div class = "area">
+                    <input type = "textarea" ng-model ="text" placeholder ="Enter Game Title..."
+                    name ="title" class = "search-box" /> 
 
-                  <a ng-href="#results/{{ text }}">
-                    <div id="submit-button" input type ="submit"  value = "Submit"> Enter </div>
+                    <a ng-href="#results/{{ text }}">
+                      <div id="submit-button" input type ="submit"  value = "Submit"> Enter </div>
 
-                  </a> 
-                  </span>
+                    </a> 
+                    <span class = "searchPic">
+                    <img src = "libs/glass.png"/>
+                    </span>
+
+                  </div>
                 </form>
                 </div>
 
