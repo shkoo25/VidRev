@@ -180,7 +180,7 @@
 
 .slogan-container{
   margin-top: 55px;
-  width: 60%;
+  width: 100%;
   padding: 0;
 }
 
@@ -190,12 +190,19 @@
 }
 
 h1{
-  font-size: 45px;
+    font-size: 45px;
+    margin-left: 22%;
+    width: 50%;
+}
+.front-container{
+	width:100%;
 }
 
 .paragraph1{
-  font-size: 15px;
-  margin-bottom: 25px;
+    font-size: 15px;
+    margin-left: 22%;
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 #gamepanel{
@@ -273,12 +280,12 @@ h1{
 
 
 .search-box{
-	width: 450px;
+	width: 250px;
     /*position: relative;*/
     vertical-align: top;
     display: inline-block;
     height: 23px;
-    margin-left: 500px;
+    margin-left: 700px;
 }
 
 .metacritic-logo{
@@ -337,6 +344,18 @@ h1{
 	width: 100%;
 	padding: 15px;
 }
+@media only screen and (max-width:1161px){
+	.search-box{
+	width: 200px;
+    /*position: relative;*/
+    vertical-align: top;
+    display: inline-block;
+    height: 23px;
+    margin-left: 650px;
+}
+
+
+}
 @media only screen and (max-width:1041px){
 		/*if screen gets larger then 960px, it will not display*/
 	.metacritic-container{
@@ -364,9 +383,19 @@ h1{
 		overflow:scroll;
 	}
 	.searchPic{
-	    position: absolute;
-	    z-index: 2;
-	    margin-left: 771px;
-    	margin-top: 70px;
-  	}
+    display: inline-block;
+    vertical-align: top;
+    height:25px;
+}
+
+
+
+.search-box{
+	width: 200px;
+    /*position: relative;*/
+    vertical-align: top;
+    display: inline-block;
+    height: 23px;
+    margin-left: 500px;
+}
 }
