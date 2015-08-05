@@ -390,17 +390,15 @@ h1{
     vertical-align: top;
     height:25px;
     font-size:14px;
-}
+	}
 
-
-
-.search-box{
+	.search-box{
 	width: 200px;
     /*position: relative;*/
     vertical-align: top;
     display: inline-block;
     height: 23px;
-    margin-left: 500px;
+    margin-left: 300px;
     font-size:14px;
-}
+	}
 }
