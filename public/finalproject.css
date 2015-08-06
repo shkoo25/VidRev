@@ -33,7 +33,7 @@
 
 
 .container{
-	height:100vh;
+	height:88vh;
 	width:100%;
 	display: inline-block;
 	background-image: url("libs/vidrevbackground.png");) no-repeat center center fixed;
@@ -53,7 +53,7 @@
 	margin-left:2%;
 	display: inline-block;
 	color:white;
-	font-size:9px;
+	font-size:13px;
 	margin-bottom:20px;
 	opacity:0.6;
 	vertical-align: top;
@@ -100,7 +100,9 @@
 }
 
 .critic-header{
-	width:13%;
+	width:100%;
+	display: inline-block;
+
 }
 
 .youtube-panel{
@@ -152,7 +154,7 @@
 }
 
 .search-container{
-	height:100vh;
+	height:88vh;
 	width:100%;
 	display: inline-block;
   	-webkit-background-size: cover;
@@ -179,7 +181,6 @@
 }
 
 .slogan-container{
-  margin-top: 55px;
   width: 100%;
   padding: 0;
 }
@@ -267,6 +268,7 @@ h1{
 .twitch-logo{
 	height:36px;
 	width:98px;
+	margin-left:390px;
 }
 .area{
 	font-size: 0;
@@ -297,11 +299,14 @@ h1{
 .youtube-logo{
 	height:36px;
 	width:98px;
+	margin-left:120px;
 }
 
 .footer-container{
-	background-image: url("libs/vidrevbackground.png");) no-repeat center center fixed;
  	color:white;
+ 	display: inline-block;
+    width: 100%;
+    background-color: black;
 }
 
 
@@ -342,10 +347,25 @@ h1{
 	cursor:pointer;
 }
 
+
+.steve{
+	text-align: right;
+	margin-left:65%;
+}
+
 .review-container{
 	width: 100%;
 	padding: 2px;
 }
+
+.another-container{
+	font-size:0px;
+	height:100%;
+}
+.twitter-handle{
+	color:#62ACF1;
+}
+
 @media only screen and (max-width:1161px){
 	.search-box{
 	width: 200px;

@@ -81,7 +81,6 @@ var app = angular.module("reviewApp", ["ngRoute"])
 
           $scope.clickPlay = function(twitch) {
             $scope.clickedOn[twitch.stream_id] = true
-            
           }
             
 

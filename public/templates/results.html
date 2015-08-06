@@ -13,7 +13,13 @@
                   
             <div class = "review-container">
               <div class = "critic-header">
+
                 <img src="libs/metacritic4.png" class="metacritic-logo"/>
+                <img src="libs/youtube4.png"
+                class = "youtube-logo"/>
+                  <img src="libs/twitch1.png" 
+                     class = "twitch-logo"/>
+                    
               </div>
               <div class = "metacritic-container"> 
                       
@@ -42,8 +48,7 @@
 
               
                     <div class = "youtube-container"> 
-                    <img src="libs/youtube4.png"
-                    class = "youtube-logo"/>
+                    
                             <div class = "youtube-review">
                             <div ng-repeat = "youtube in youtubes" class = "youtube-panel">
 
@@ -54,8 +59,7 @@
                    
 
                      <div class = "twitch-container">  
-                     <img src="libs/twitch1.png" 
-                     class = "twitch-logo"/>
+                   
                           
                         
                               <div class = "twitch-review"> 
@@ -65,6 +69,7 @@
                               
                                   <div class="pb" ng-if="clickedOn[twitch.stream_id] === false" 
                                     ng-click="clickPlay(twitch)">
+
                                     <div class = "twitch-button">
 
                                     <img src = "libs/twitchplay.png"/>
@@ -94,6 +99,11 @@
 
                             </div>
                             </div>
+
+                              <div class = "footer-container">
+                    <span class="dru">Andrew Liwanag. @drutyper</span>
+                    <span class = "steve">Steve Koo. @SteveHKoo</span>
+                </div>
 
 
                          
