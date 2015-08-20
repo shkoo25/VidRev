@@ -202,7 +202,7 @@ h1{
 .paragraph1{
     font-size: 15px;
     margin-left: 22%;
-    width: 50%;
+    width: 52%;
     margin-bottom: 20px;
 }
 
@@ -361,6 +361,7 @@ h1{
 .another-container{
 	font-size:0px;
 	height:100%;
+	width:100%;
 }
 .twitter-handle{
 	color:#62ACF1;

@@ -29,7 +29,7 @@ var app = angular.module("reviewApp", ["ngRoute"])
       var newTime = randomNum( timeMin, timeMax ) * 1000;
       c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
       cardsTimeout( id, newTime, card );
-    }, time );
+    }, time ); 
   }
 
   
@@ -50,11 +50,6 @@ var app = angular.module("reviewApp", ["ngRoute"])
      })
 
     app.controller("baseController", function($scope, $http, $sce, $routeParams){
-
-      /*var background= ["libs/youtube-background.png", "libs/twitch1.png"]
-
-      var backgroundPics = _.sample(background)
-      $scope.background="url(" + backgroundPics + ")"*/
 
 
       var game = $routeParams.game_name
