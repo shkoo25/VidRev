@@ -59,7 +59,7 @@ var app = angular.module("reviewApp", ["ngRoute"])
 
       var game = $routeParams.game_name
       
-      $http.get("https://vidrev.herokuapp.com/?search=" + game).success(function(data){
+      $http.get("https://vidrevapi.herokuapp.com/?search=" + game).success(function(data){
       
           $scope.reviews = data.Metacritic
 
