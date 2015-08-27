@@ -155,7 +155,7 @@
 
 .search-container{
 	height:88vh;
-	width:100%;
+	width:106%;
 	display: inline-block;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -170,7 +170,7 @@
 	display: inline-block;
 	vertical-align: top;
 	margin-top:9px;
-	margin-left:6%;
+	
 }
 
 
@@ -306,7 +306,7 @@ h1{
 .footer-container{
  	color:white;
  	display: inline-block;
-    width: 100%;
+    width: 105%;
     background-color: black;
 }
 
@@ -351,7 +351,7 @@ h1{
 
 .steve{
 	text-align: right;
-	margin-left:65%;
+	margin-left:58%;
 }
 
 .review-container{
@@ -362,7 +362,7 @@ h1{
 .another-container{
 	font-size:0px;
 	height:100%;
-	width:100%;
+	width:105%;
 }
 .twitter-handle{
 	color:#62ACF1;
