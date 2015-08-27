@@ -6,7 +6,7 @@
 }
 
 .header{
-	height:8vh;
+	height:10vh;
 	width:100%;
 	background-color:black;
 	color:orange;
@@ -308,6 +308,7 @@ h1{
  	display: inline-block;
     width: 105%;
     background-color: black;
+    font-size:33px;
 }
 
 
@@ -351,7 +352,7 @@ h1{
 
 .steve{
 	text-align: right;
-	margin-left:58%;
+	margin-left:35%;
 }
 
 .review-container{
