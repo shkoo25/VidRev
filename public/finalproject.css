@@ -28,7 +28,8 @@
 	color: orange;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block
+    display: inline-block;
+    width:100%;
 }
 
 
