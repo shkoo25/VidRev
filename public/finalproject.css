@@ -155,7 +155,7 @@
 
 .search-container{
 	height:88vh;
-	width:106%;
+	width:200%;
 	display: inline-block;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -268,8 +268,7 @@ h1{
 }
 .twitch-logo{
 	height:36px;
-	width:98px;
-	margin-left:390px;
+	margin-left:33%;
 }
 .area{
 	font-size: 0;
@@ -299,8 +298,7 @@ h1{
 }
 .youtube-logo{
 	height:36px;
-	width:98px;
-	margin-left:120px;
+	margin-left:12%;
 }
 
 .footer-container{
