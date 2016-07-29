@@ -1,51 +1,31 @@
-<!DOCTYPE html>    
-<html ng-app="reviewApp">  
-  <head>
-    <title>VIDREV</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel = "shortcut icon" type="image/x-icon" href="libs/controller.ico"/>
-    <link href="finalproject.css" rel="stylesheet" />
-  </head> 
-  <body>
-            
-
-                <div class = "header">
-
-                  <span class = "header-1"</span>
-                  <a ng-href ="#landing">VIDREV</a>
-                  
-                  
-                  <form ng-controller="searchController" ng-submit="submit()" class = "searchArea"> 
-                  <div class = "area">
-                    <input type = "textarea" ng-model ="text" placeholder ="Enter Game Title..."
-                    name ="title" class = "search-box" /> 
-
-                    <a ng-href="#results/{{ text }}">
-                      <div id="submit-button" input type ="submit"  value = "Submit"> Enter </div>
-
-                    </a> 
-                    <span class = "searchPic">
-                    <img src = "libs/glass.png"/>
-                    </span>
-
-                  </div>
-                </form>
-                   <div ng-view 
-                class ="another-container"></div>
-                
-            
-
-               
-                </div>
-                  
-            
-
-
-      <script src ="libs/angular.js"></script>
-      <script src ="libs/angular-route.js"></script>
-      <script src ="libs/underscore.js"></script> 
-
-      <script src ="finalproject.js"></script>
-
-  </body>
-  </html> 
+<!DOCTYPE html>
+<html ng-app="reviewApp">
+<head>
+  <title>VIDREV</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="libs/controller.ico" />
+  <link href="finalproject.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="header">
+    <span class="header-1" </span>
+    <a ng-href="#landing">VIDREV</a>
+    <form ng-controller="searchController" ng-submit="submit()" class="searchArea">
+      <div class="area">
+        <input type="textarea" ng-model="text" placeholder="Enter Game Title..." name="title" class="search-box" />
+        <a ng-href="#results/{{ text }}">
+          <div id="submit-button" input type="submit" value="Submit"> Enter </div>
+        </a>
+        <span class="searchPic">
+          <img src = "libs/glass.png"/>
+        </span>
+      </div>
+    </form>
+    <div ng-view class="another-container"></div>
+  </div>
+  <script src="libs/angular.js"></script>
+  <script src="libs/angular-route.js"></script>
+  <script src="libs/underscore.js"></script>
+  <script src="finalproject.js"></script>
+</body>
+</html>

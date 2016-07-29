@@ -1,183 +1,170 @@
-<div class = "search-container">  
-
-                <form ng-controller="searchController" ng-submit="submit()" class = "searchArea"> 
-  					
-  					
-                  <ng-model ="text"  placeholder="Enter Game Title..."name ="title"/> 
-                  
-                  <a ng-href="#results/{{ text }}">
-                    <div id="submit-button" input type ="submit" value = "Submit"> Enter </div>
-                  </a> 
-
-                </form>
-
-
-              
+<div class="search-container">
+  <form ng-controller="searchController" ng-submit="submit()" class="searchArea">
+    <ng-model="text" placeholder="Enter Game Title..." name="title" />
+    <a ng-href="#results/{{ text }}">
+      <div id="submit-button" input type="submit" value="Submit"> Enter </div>
+    </a>
+  </form>
   <div class="panel-container">
     <div class="slogan-container">
-
       <div class="slogan">
-      	<div class = "front-container">
-            <h1> Video Game Reviews</h1>
-              <div class="paragraph1">Search for games you want to watch or read about with Youtube game reviews, Metacritic critic and Twitch live streams. 
-              For gamers, by gamers</div>
+        <div class="front-container">
+          <h1> Video Game Reviews</h1>
+          <div class="paragraph1">Search for games you want to watch or read about with Youtube game reviews, Metacritic critic and Twitch live streams. For gamers, by gamers</div>
         </div>
-       
-          
-
-      <div id="gamepanel"> 
-        <div class="card effect__random" data-id="1">                   
-          <div class="card__front">
-            <span class="card__text">
+        <div id="gamepanel">
+          <div class="card effect__random" data-id="1">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/rocket%20league">
             <img class="front" src="http://www.zonaleros.net/imagenes/4bceccb09e936227d20eaa6a2dccd8b4_thumb.jpg"</span></a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+            </div>
+            <div class="card__back">
+              <span class="card__text">
 
             <a ng-href ="http://vidrev.herokuapp.com/#/results/batman">
             <img class="front" src="https://s-media-cache-ak0.pinimg.com/236x/ac/72/7e/ac727ede7dc0d6fa1f50cba74b7ae372.jpg"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="card effect__random" data-id="2">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="2">
+            <div class="card__front">
+              <span class="card__text">
              <a ng-href ="http://vidrev.herokuapp.com/#/results/lego%20jurassic%20world">
             <img class="front" src="http://i46.photobucket.com/albums/f103/DaNu_AnggoRo/Info%20Dunia%20Game/LEGO.Jurassic.World-large_zpsxihbsqbc.jpg"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/heavensward">
 
             <img class="front" src="http://cdn4.dualshockers.com/wp-content/uploads/2015/03/FFXIV_Heavensward_PC_PEGI_1426176152.jpg"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="card effect__random" data-id="3">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="3">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/heroes%20of%20the%20storm">
             <img class="front" src="https://www.ozone.bg/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/h/e/heroes-of-the-storm-starter-pack-pc_3.png"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/life%20is%20strange">
 
             <img class="front" src="http://assets1.ignimgs.com/2015/05/18/thewitcher3pc1jpg-4dfaf8.jpg"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="card effect__random" data-id="4">
-          <div class="card__front">
-          <a ng-href="http://vidrev.herokuapp.com/#/results/project%20cars">
-            <span class="card__text"><img class="front" src="http://img10.deviantart.net/c3a8/i/2014/187/a/e/project_cars_cover_4_by_rafamb91-d7pij6w.jpg"</span>
-            </a>
+          <div class="card effect__random" data-id="4">
+            <div class="card__front">
+              <a ng-href="http://vidrev.herokuapp.com/#/results/project%20cars">
+                <span class="card__text"><img class="front" src="http://img10.deviantart.net/c3a8/i/2014/187/a/e/project_cars_cover_4_by_rafamb91-d7pij6w.jpg"</span>
+              </a>
+            </div>
+            <div class="card__back">
+              <a ng-href="http://vidrev.herokuapp.com/#/results/final%20fantasy%20x">
+                <span class="card__text"><img class="front" src="http://static.giantbomb.com/uploads/original/5/56735/2571901-2513966000-ffx_x.jpg"</span>
+              </a>
+            </div>
           </div>
-          <div class="card__back">
-          	<a ng-href="http://vidrev.herokuapp.com/#/results/final%20fantasy%20x">
-            <span class="card__text"><img class="front" src="http://static.giantbomb.com/uploads/original/5/56735/2571901-2513966000-ffx_x.jpg"</span>
-            </a>
-          </div>
-        </div>
 
-        <div class="card effect__random" data-id="5">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="5">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/wolfenstein%20the%20old%20blood">
             <img class="front" src="http://assets.vg247.com/current//2015/03/WOLF_TheOldBlood_POSTER_200dpi_EN_1425468997.jpg"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/the%20elder%20scrolls:%20Tamriel%20Unlimited">
             <img class="front" src="https://www.licente-jocuri.ro/image/data/covers/the_elder_scrolls_online_tamriel_unlimited_pc__1.jpg"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-            <div class="card effect__random" data-id="6">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="6">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/rory">
             <img class="front" src="http://resources.budgetgaming.nl/boxarts/112004_rory15.jpg"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/splatoon">
             <img class="front" src="http://www.codes4wiiu.com/wp-content/uploads/2015/05/Splatoon-Free-eShop-Download-Code.png"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-         <div class="card effect__random" data-id="7">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="7">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/street%20fighter%204">
             <img class="front" src="http://ecx.images-amazon.com/images/I/81Ar%2BOmejUL._SL1500_.jpg"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/terraria">
             <img class="front" src="https://s-media-cache-ak0.pinimg.com/originals/8a/21/b5/8a21b5f17b1c5c8ba876f0c1f8bbd0dc.jpg"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="card effect__random" data-id="8">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="8">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/minecraft">
             <img class="front" src="http://www.minecraft-gg.com/images/Minecraft.jpg"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/destiny">
             <img class="front" src="http://www.game-box.cz/wp-content/uploads/2015/01/Destiny-Cover1.jpg"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="card effect__random" data-id="9">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="9">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/journey">
             <img class="front" src="http://www.gameplayer.com.au/wp-content/uploads/2013/04/journey-cover.jpg"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/life%20is%20strange">
             <img class="front" src="https://store.eu.square-enix.com/emea_uk/img/games/01see1825480_05.jpg"</span>
-            </a>
+              </a>
+            </div>
           </div>
-        </div> 
 
-        <div class="card effect__random" data-id="10">
-          <div class="card__front">
-            <span class="card__text">
+          <div class="card effect__random" data-id="10">
+            <div class="card__front">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/devil%20may%20cry%204">
             <img class="front" src="http://igrobanda.ru/uploads/screenshots-pc/Devil_May_Cry4_Special_Edition.jpg"</span>
-            </a>
-          </div>
-          <div class="card__back">
-            <span class="card__text">
+              </a>
+            </div>
+            <div class="card__back">
+              <span class="card__text">
             <a ng-href="http://vidrev.herokuapp.com/#/results/tales%20from%20the%20borderlands">
             <img class="front" src="https://d12vb6dvkz909q.cloudfront.net/uploads/galleries/44459/tftbl_poster_lorez.jpg"</span>
-            </a>
-          </div>
+              </a>
+            </div>
           </div>
 
         </div>
       </div>
-    </div> 
-  </div>     
-</div>  
+    </div>
+  </div>
+</div>
