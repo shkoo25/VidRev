@@ -49,7 +49,7 @@ var app = angular.module("reviewApp", ["ngRoute"])
 
      })
 
-    app.controller("baseController", function($scope, $http, $sce, $routeParams){
+    app.controller("baseController", ['$scope','$http', '$sce', '$routeParams', function($scope, $http, $sce, $routeParams){
 
 
       var game = $routeParams.game_name
@@ -92,8 +92,8 @@ var app = angular.module("reviewApp", ["ngRoute"])
         //}
         
                      
-      })
-    })
+      });
+    })];
 
   app.config(function($routeProvider){
 
